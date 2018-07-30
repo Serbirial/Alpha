@@ -13,7 +13,8 @@ def check_prefix(bot, message):
 
 initial_extensions = ['cogs.fun',
                       'cogs.info',
-                      'cogs.owner']
+                      'cogs.owner'
+					  'cogs.mod']
 
 bot = commands.Bot(command_prefix=check_prefix, description='Alpha bot')
 
@@ -32,7 +33,7 @@ async def on_ready():
     print(f'\n\nLogged in as: {bot.user.name} - {bot.user.id}\nVersion: {discord.__version__}\n')
 
     # Changes our bots Playing Status. type=1(streaming) for a standard game you could remove type and url.
-    await bot.change_presence(activity=discord.Game(name='Omega | O-help', type=1, url='https://twitch.tv/dathidewolf'))
+    await bot.change_presence(activity=discord.Game(name='Alpha | A-help', type=1, url='https://twitch.tv/dathidewolf'))
     print(f'Alpha reporting for duty!')
 
 
